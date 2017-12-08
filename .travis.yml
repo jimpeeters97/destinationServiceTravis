@@ -1,16 +1,13 @@
 language: java
 cache:
- directories:
- - $HOME/.m2
+  directories:
+  - $HOME/.m2
 jdk:
 - oraclejdk8
+sudo: required
+services:
+- docker
 script:
-- mvn clean package 
- 
- sudo: required
- services:
- - docker
- script:
- - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
- - mvn clean package docker:build
- - docker push jimpeeters97/destinationservicetravis:les10TaakDestinationService
+- docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+- mvn clean package docker:build 
+- docker push jimpeeters97/destinationservicetravis:les10TaakDestinationService
