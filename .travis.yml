@@ -9,7 +9,7 @@ services:
 - docker
 env:
  matrix:
- - DOCKER_IMAGE=jimpeeters97/destinationservicetravis:les10TaakDestinationService
+ - DOCKER_IMAGE=les10TaakDestinationService
 script:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 - mvn clean package docker:build 
