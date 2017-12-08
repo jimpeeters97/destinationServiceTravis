@@ -1,9 +1,9 @@
 language: java
 cache:
-  directories:
-  - $HOME/.m2
- jdk:
- - oraclejdk8
+directories:
+- $HOME/.m2
+jdk:
+- oraclejdk8
  
  sudo: required
  services:
@@ -12,4 +12,3 @@ cache:
  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
  - mvn clean package docker:build
  - docker push jimpeeters97/destinationservicetravis:les10TaakDestinationService
- 
