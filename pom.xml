@@ -49,7 +49,7 @@
 
 	<properties>
 		<java.version>1.8</java.version>
-		<docker.image.name>jimpeeters97/destinationServiceTravis</docker.image.name>
+		<docker.image.name>jimpeeters97/destinationservicetravis</docker.image.name>
         <docker.image.tag>les10taakdestinationservice</docker.image.tag>
 	</properties>
 
