@@ -12,5 +12,6 @@ env:
  - DOCKER_IMAGE=jimpeeters97/destinationservicetravis:les10taakdestinationservice
 script:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+- docker build -t $DOCKER_IMAGE
 - mvn clean package docker:build 
 - docker push $DOCKER_IMAGE
