@@ -1,4 +1,5 @@
-hello\Destination.class
 hello\DestinationApplication.class
-hello\DestinationController.class
 hello\DestinationService.class
+hello\Destination.class
+hello\DestinationController.class
+META-INF\maven\org.ucll.be\les10TaakDestinationService\pom.xml

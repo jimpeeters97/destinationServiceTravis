@@ -7,7 +7,10 @@ jdk:
 sudo: required
 services:
 - docker
+env:
+ matrix:
+ - DOCKER_IMAGE=jimpeeters97/destinationservicetravis:les10TaakDestinationService
 script:
 - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 - mvn clean package docker:build 
-- docker push jimpeeters97/destinationservicetravis:les10TaakDestinationService
+- docker push $DOCKER_IMAGE
