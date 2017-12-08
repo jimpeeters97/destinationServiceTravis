@@ -13,4 +13,4 @@ cache:
  script:
  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
  - mvn clean package docker:build
- - docker push jimpeeters97/destinationServiceTravis:les10TaakDestinationService
+ - docker push jimpeeters97/destinationservicetravis:les10TaakDestinationService
