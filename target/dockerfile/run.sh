@@ -1,2 +1,2 @@
 #!/bin/sh
-java -jar /usr/local/les10taakDestinationService/les10taakDestinationService-0.1.0.jar
+java -jar /usr/local/les10taakdestinationservice/les10taakdestinationservice-0.1.0.jar
