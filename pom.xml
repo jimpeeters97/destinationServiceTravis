@@ -5,7 +5,7 @@
 
 	<groupId>org.ucll.be</groupId>
 	<artifactId>les10taakdestinationservice</artifactId>
-	<version>0.1.0</version>
+	<version>latest</version>
 	<packaging>jar</packaging>
 
 	<parent>
